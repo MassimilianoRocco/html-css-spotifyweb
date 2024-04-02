@@ -2,8 +2,254 @@
     GENERAL STYLES
  *************************************************/
 
- *{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
+.t-align-c{
+    text-align: center;
+}
+
+.rounded{
+    border-radius: 50%;
+}
+
+.flex{
+    display: flex;
+}
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+.inline{
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Backgrounds or Colors */
+.bg-darkerblue{
+    background-color: #0084fd;
+}
+
+.bg-blue{
+    background-color: #b5ddff;
+}
+.bg-dkgray{
+    background-color: #282828;
+}
+.bg-white{
+    background-color: white;
+}
+.bg-black{
+    background-color: black;
+}
+
+.white{
+    color: white;
+}
+.white-op{
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+
+/************************************************
+    UTILITIES
+ ************************************************/
+
+
+
+
+
+
+
+
+ /************************************************
+    SITE SECTIONS
+ ************************************************/
+
+ main{
+    height: 90vh;
+}
+.main-container{
+    height: 90vh;
+}
+
+
+
+/* NAVBAR */
+
+nav{
+    width: 15%;
+}
+nav .container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+nav .container div{
+    margin: 0.5rem 0;
+}
+
+nav .abs-group-icons{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+nav .abs-group-icons div{
+    margin: 1rem 0;
+}
+.separator{
+    display: none;
+}
+nav .abs-group-icons p{
+    display: none;
+
+}
+
+
+
+nav p{
+    color: #ffffff;
+    opacity: 0.8;
+    display: none;  
+}
+
+.playlist-box{
+    display: none;
+}
+
+.add-icon{
+    font-size: 3rem;
+}
+#crea-playlist{
+    align-self: center;
+    margin-left: 0.5rem;
+}
+
+nav .playlist-box p{
+    margin: 0.5rem 0;
+    display: block;
+}
+
+
+/* INSIDE CONTENT */
+
+.content-container{
+    width: 85%;
+    background-color: #59626b;
+}
+
+header{
+    height: 10%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #080b12 ;
+}
+header p{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    border:1px solid white;
+    border-radius: 20%/80%;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    height: 10vh;
+    width: 100% ;
+}
+
+
+
+
+/*************************************************
+    MEDIA
+ *************************************************/
+
+ @media screen and (min-width:480px){
+
+    /* NAVBAR */
+
+    nav{
+        width: 220px;
+    }
+
+    nav .container{
+        text-align: left;
+    }
+
+    #spotify{
+        margin: 1rem auto;
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    nav p{
+        display: inline-block;
+    }
+
+    .playlist-box{
+        display: unset;
+    }
+
+    .playlist-box #playlist-text{
+        opacity: unset;
+    }
+    
+
+
+    nav .abs-group-icons{
+        display: unset;
+        max-width: 80%;
+        bottom: 0;
+        left: 10%;
+        transform: unset;
+    }
+    .separator{
+        display: block;
+        width: 100%;
+    }
+    nav .abs-group-icons p{
+        display: inline;
+        margin-left: 0.5rem;
+    }
+
+    /* INSIDE CONTENT */
+
+    .content-container{
+        width: calc(100% - 220px);
+        background-color: #59626b;
+    }
+ }
+
