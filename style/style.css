@@ -12,6 +12,9 @@
 .t-align-c{
     text-align: center;
 }
+.t-align-r{
+    text-align: right;
+}
 
 .rounded{
     border-radius: 50%;
@@ -41,6 +44,7 @@ img{
     height: 100%;
     object-fit: cover;
 }
+
 
 
 /* Backgrounds or Colors */
@@ -73,7 +77,10 @@ img{
 /************************************************
     UTILITIES
  ************************************************/
-
+ .boxed{
+    width: 90%;
+    margin: 1rem auto;
+}
 
 
 
@@ -154,8 +161,9 @@ nav .playlist-box p{
 /* INSIDE CONTENT */
 
 .content-container{
-    width: 85%;
-    background-color: #59626b;
+    width: 85%;  /*da mettere in px per il formato tabl*/
+    background-color: #141922;
+    overflow: auto;
 }
 
 header{
@@ -163,6 +171,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     background-color: #080b12 ;
+    position: sticky;
 }
 header p{
     width: 50%;
@@ -172,6 +181,46 @@ header p{
     border-radius: 20%/80%;
     padding: 0.5rem 1rem;
     color: white;
+}
+
+/* Menu Section */
+
+.menu-container{
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    color: #7d7f84;
+}
+.menu-container .menu{
+    width: calc(100% / 4);
+}
+.menu-container .menu-bot{
+    width: 50%;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+/* Music Section */
+
+.music p{
+    color: #7d7f84;
+}
+
+.music-container{
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.bigbox{
+    width: calc(100% / 2);
+    padding: 0.5rem;
+}
+.bigbox h3{
+    color: white;
+}
+.bigbox p{
+    color: #7d7f84;
+    margin-top: 0.5rem;
 }
 
 
@@ -197,7 +246,7 @@ footer{
     MEDIA
  *************************************************/
 
- @media screen and (min-width:480px){
+ @media screen and (min-width:550px){
 
     /* NAVBAR */
 
