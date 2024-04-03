@@ -157,7 +157,7 @@ nav .playlist-box p{
 }
 .list-box{
     overflow: auto;
-    height: 25rem;
+    max-height: 20rem;
 }
 
 .playlist-box .add-icon:hover{
@@ -180,7 +180,10 @@ header{
     justify-content: flex-end;
     align-items: center;
     background-color: #080b12 ;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     opacity: 0.8;
 }
@@ -189,17 +192,17 @@ header p{
     height: 50%;
     text-align: center;
     border:1px solid white;
-    border-radius: 20%/80%;
-    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    padding: 0.65rem 1rem;
     color: white;
     position: absolute;
-    right: 15%;
+    right: 5%;
 }
 
 /* Menu Section */
 
 .menu-container{
-    margin-top: 7rem;
+    margin-top: 1rem;
     flex-wrap: wrap;
     font-size: 0.7rem;
     color: #7d7f84;
