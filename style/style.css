@@ -104,24 +104,28 @@ img{
 
 nav{
     width: 15%;
+    overflow: hidden;
 }
 nav .container{
     width: 80%;
+    height: 100%;
     margin: auto;
     text-align: center;
+    justify-content: space-between;
 }
 
 nav .container div{
-    margin: 0.5rem 0;
+    margin: 1rem 0;
+}
+.first-box{
+    height: 80%;
 }
 
 nav .abs-group-icons{
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
+   height: 15%;
 }
 nav .abs-group-icons div{
-    margin: 1rem 0;
+
 }
 .separator{
     display: none;
@@ -141,6 +145,7 @@ nav p{
 
 .playlist-box{
     display: none;
+    
 }
 
 .add-icon{
@@ -176,7 +181,7 @@ nav .playlist-box p{
 }
 
 header{
-    height: 10%;
+    height: 100px;
     justify-content: flex-end;
     align-items: center;
     background-color: #080b12 ;
@@ -354,10 +359,7 @@ progress:hover{
 
     nav .abs-group-icons{
         display: unset;
-        max-width: 80%;
-        bottom: 0;
-        left: 10%;
-        transform: unset;
+        width: 100%;
     }
     .separator{
         display: block;
@@ -373,5 +375,63 @@ progress:hover{
     .content-container{
         width: calc(100% - 220px);
     }
+
+    .menu-container .menu{
+        width: calc(100% / 3);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .menu-container .menu-bot{
+        width: calc(100% / 3);
+        margin-top: 1rem;
+        padding: 0rem;
+    }
+
  }
 
+
+
+ @media screen and (min-width:768px){
+    .menu-container .menu{
+        width: calc(100% / 5);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .menu-container .menu-bot{
+        width: calc(100% / 5);
+        margin-top: 1rem;
+        padding: 0rem;
+    }
+    .menu-container .menu-bot:last-child{
+        width: 100%;
+    }
+
+    .bigbox{
+        width: calc(100% / 4);
+        padding: 0.5rem;
+    }
+    
+ }
+
+ 
+ @media screen and (min-width:992px){
+    .menu-container .menu{
+        width: calc(100% / 6);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .menu-container .menu-bot{
+        width: calc(100% / 6);
+        margin-top: 1rem;
+        padding: 0rem;
+    }
+    .menu-container .menu-bot:last-child{
+        width: calc(100% / 6)
+    }
+
+    .bigbox{
+        width: calc(100% / 6);
+        padding: 0.5rem;
+    }
+ }
+ 
