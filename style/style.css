@@ -124,9 +124,7 @@ nav .container div{
 nav .abs-group-icons{
    height: 15%;
 }
-nav .abs-group-icons div{
 
-}
 .separator{
     display: none;
 }
@@ -144,8 +142,11 @@ nav p{
 }
 
 .playlist-box{
-    display: none;
-    
+    display: none;  
+}
+#playlist-text{
+    padding: unset;
+    border: unset;
 }
 
 .add-icon{
@@ -154,21 +155,56 @@ nav p{
 #crea-playlist{
     align-self: center;
     margin-left: 0.5rem;
+    padding: unset;
+    border: unset;
 }
 
 nav .playlist-box p{
     margin: 0.5rem 0;
     display: block;
+    padding: 0 1rem;
 }
+
+
 .list-box{
     overflow: auto;
     max-height: 20rem;
+}
+
+
+
+/* NAV HOVER  */
+
+.first-box div:hover{
+    border-left: 3px solid green;
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+#spotify:hover{
+    border: unset;
+    padding: unset;
+    cursor: unset;
+}
+.playlist-box .list-box:hover{
+    border: unset;
+    padding: unset;
+    cursor: unset;
 }
 
 .playlist-box .add-icon:hover{
     cursor: pointer;
 }
 .playlist-box .list-box p:hover{
+    cursor: pointer;
+}
+
+nav .playlist-box p:hover{
+    border-left: 3px solid green;
+}
+
+nav .abs-group-icons div:hover{
+    border-left: 3px solid green;
+    padding-left: 0.5rem;
     cursor: pointer;
 }
 
@@ -198,7 +234,7 @@ header p{
     text-align: center;
     border:1px solid white;
     border-radius: 30px;
-    padding: 0.65rem 1rem;
+    padding: 0.9rem 1rem;
     color: white;
     position: absolute;
     right: 5%;
@@ -219,6 +255,16 @@ header p{
     width: 50%;
     margin-top: 1rem;
     padding: 1rem;
+}
+
+.abs-green-line{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: 10px;
+    height: 5px;
+    color: green;
+    display: none;
 }
 
 /* Music Section */
@@ -242,6 +288,50 @@ header p{
 .bigbox p{
     color: #7d7f84;
     margin-top: 0.5rem;
+}
+
+.abs-play{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.abs-play i{
+    font-size: 3rem;
+}
+
+
+
+/* Hover */
+
+header p:hover{
+    height: 55%;
+    width: 16rem;
+    padding: 1rem 1.1rem;
+    cursor: pointer;
+}
+
+.menu-container .menu:hover{
+    cursor: pointer;
+}
+.menu-container .menu:hover .abs-green-line{
+    display: block;
+}
+.menu-container .menu-bot:hover{
+    cursor: pointer;
+}
+.menu-container .menu-bot:hover .abs-green-line{
+    display: block;
+    height: 20px;
+}
+
+.bigbox:hover img{
+   opacity: 0.5;
+}
+.bigbox:hover .abs-play{
+    display: unset;
+    cursor: pointer;
 }
 
 
@@ -278,9 +368,6 @@ footer .wings-box .img-box{
 }
 
 
-footer .wings-box .text-box{
-    
-}
 
 footer .wings-box .icons-box{
     margin-left: 0.5rem;
