@@ -260,9 +260,9 @@ header p{
 .abs-green-line{
     position: absolute;
     bottom: 0;
-    left: 45%;
-    width: 10px;
+    left: 50%;
     height: 5px;
+    transform: translate( -50% );
     color: green;
     display: none;
 }
@@ -399,13 +399,61 @@ footer .mid-box i{
 #right progress{
     max-width: 40%;
 }
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+     appearance: none;
+  
+    width: 250px;
+    height: 20px;
+    margin-top: 0.5rem;
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+  progress[value]::-webkit-progress-value {
+    background-image:
+         -webkit-linear-gradient(-45deg, 
+                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                 rgba(0,0, 0, .1) 66%, transparent 66%),
+         -webkit-linear-gradient(top, 
+                                 rgba(255, 255, 255, .25), 
+                                 rgba(0, 0, 0, .25)),
+         -webkit-linear-gradient(left, #09c, #f44);
+  
+      border-radius: 2px; 
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+  }
 
-progress:hover{
+/* Hover */
+
+footer .text-box p:hover{
+    color:white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+footer .icons-box i:hover{
+    color:white;
     cursor: pointer;
 }
 
+footer .mid-box i:hover{
+    cursor: pointer;
+}
+footer .mid-box .fa-circle-play:hover{
+    font-size: 1.6rem;
+}
 
+progress[value]:hover{
+    cursor: pointer;
+}
 
+progress[value]::-webkit-progress-value:hover {
+    background-image: none;
+    background-color: green; 
+}
 
 
 /*************************************************
