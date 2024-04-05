@@ -133,8 +133,6 @@ nav .abs-group-icons p{
 
 }
 
-
-
 nav p{
     color: #ffffff;
     opacity: 0.8;
@@ -165,7 +163,6 @@ nav .playlist-box p{
     padding: 0 1rem;
 }
 
-
 .list-box{
     overflow: auto;
     max-height: 20rem;
@@ -183,7 +180,6 @@ nav .playlist-box p{
 #spotify:hover{
     border: unset;
     padding: unset;
-    cursor: unset;
 }
 .playlist-box .list-box:hover{
     border: unset;
@@ -227,6 +223,7 @@ header{
     left: 0;
     width: 100%;
     opacity: 0.8;
+    z-index: 999;
 }
 header p{
     width: 15rem;
@@ -333,14 +330,6 @@ header p:hover{
     display: unset;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
 
 
 
